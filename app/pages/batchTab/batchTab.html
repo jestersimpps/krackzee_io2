@@ -1,10 +1,25 @@
-
 <ion-navbar *navbar>
   <ion-title>
     Batches
   </ion-title>
+  <ion-buttons end>
+    <button>
+      <ion-icon name="md-add" (click)="addBatch()"></ion-icon> new
+    </button>
+  </ion-buttons>
+
 </ion-navbar>
 
 <ion-content class="batchTab">
+  <ion-card *ngFor="#batch of batches" (click)="viewBatch(batch)">
 
+    <ion-card-header>
+      {{batch.name}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+
+  </ion-card>
 </ion-content>

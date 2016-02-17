@@ -7,5 +7,11 @@ import {Page} from 'ionic/ionic';
 export class profileTab {
   constructor() {
 
+
+
+  }
+
+  openNavDetailsPage(item){
+    this.nav.push(addItemPage,{profileTab:this});
   }
 }
