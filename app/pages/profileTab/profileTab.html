@@ -1,0 +1,34 @@
+<ion-navbar *navbar hideBackButton class="android-attr">
+  <ion-title>Your profile</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-list>
+
+    <button ion-item (click)="openNavDetailsPage('info')">
+      <ion-icon name="md-information-circle" item-left></ion-icon>
+      Contact information
+    </button>
+
+    <button ion-item (click)="openNavDetailsPage('profile')">
+      <ion-icon name="md-globe" item-left></ion-icon>
+      Online profile
+    </button>
+
+    <button ion-item (click)="openNavDetailsPage('courses')">
+      <ion-icon name="md-list" item-left></ion-icon>
+      Courses
+    </button>
+
+    <button ion-item (click)="openNavDetailsPage('teachers')">
+      <ion-icon name="md-contacts" item-left></ion-icon>
+      Teachers
+    </button>
+
+    <button ion-item (click)="openNavDetailsPage('teachingcenters')">
+      <ion-icon name="md-navigate" item-left></ion-icon>
+      Teachingcenters
+    </button>
+
+  </ion-list>
+</ion-content>
