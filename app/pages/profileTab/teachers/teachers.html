@@ -4,13 +4,20 @@
   </ion-title>
 
   <ion-buttons end>
-    <button>
-      <ion-icon name="md-add" (click)="addTeacher()"></ion-icon> New
+    <button (click)="addTeacher()">
+      <ion-icon name="md-add" ></ion-icon> New
     </button>
   </ion-buttons>
 
 </ion-navbar>
 
 <ion-content class="teachers">
+  <ion-list>
+
+    <button ion-item *ngFor="#teacher of teachers" (click)="viewTeacher(teacher)">
+      <ion-icon name="md-person" item-left></ion-icon>
+      {{teacher.name}}
+    </button>
+  </ion-list>
 
 </ion-content>
