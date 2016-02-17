@@ -20,12 +20,25 @@ export class addBatchPage {
   }
 
   saveBatch() {
+
+    let newBatch = {
+      name: 'batch 3',
+      fee: 3500,
+      intake: 20,
+      teachers: [{
+        fullName: 'prof bob de bouwer'
+      }, {
+        fullName: 'prof akash dol'
+      }, {
+        fullName: 'prof Eva zielman'
+      }]
+    });
+    ∫
+    this.params.get('batchTab').saveBatch(newBatch);
+
     this.nav.pop();
   }
 
-  back() {
-    this.nav.pop();
-  }
 
 
 }

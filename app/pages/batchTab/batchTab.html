@@ -11,19 +11,14 @@
 </ion-navbar>
 
 <ion-content class="batchTab">
-  <ion-card *ngFor="#batch of batches" (click)="viewBatch(batch)">
 
-    <ion-card-header>
+  <ion-list>
+
+    <button ion-item *ngFor="#batch of batches" (click)="viewBatch(batch)">
+      <ion-icon name="md-paper" item-left></ion-icon>
       {{batch.name}}
-    </ion-card-header>
+    </button>
+  </ion-list>
 
-    <ion-card-content>
-      Fee: {{batch.fee}} Rupees
-      <br>Intake: {{batch.intake}} students
-      <br>Teachers:
-      <ion-badge light *ngFor="#teacher of batch.teachers">{{teacher.fullName}}</ion-badge>
 
-    </ion-card-content>
-
-  </ion-card>
 </ion-content>
