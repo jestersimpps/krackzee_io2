@@ -3,8 +3,8 @@
     Batches
   </ion-title>
   <ion-buttons end>
-    <button>
-      <ion-icon name="md-add" (click)="addBatch()"></ion-icon> new
+    <button (click)="addBatch()">
+      <ion-icon name="md-add"></ion-icon> new
     </button>
   </ion-buttons>
 
@@ -18,7 +18,11 @@
     </ion-card-header>
 
     <ion-card-content>
-      <!-- Add card content here! -->
+      Fee: {{batch.fee}} Rupees
+      <br>Intake: {{batch.intake}} students
+      <br>Teachers:
+      <ion-badge light *ngFor="#teacher of batch.teachers">{{teacher.fullName}}</ion-badge>
+
     </ion-card-content>
 
   </ion-card>
