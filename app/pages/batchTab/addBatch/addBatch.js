@@ -6,7 +6,7 @@ import {
 
 
 @Page({
-  templateUrl: 'build/pages/batchTab/addBatch/addBatch.html'
+  templateUrl: 'build/pages/batchTab/addBatch/addbatch.html'
 })
 
 
@@ -22,15 +22,11 @@ export class addBatchPage {
   saveBatch() {
 
     let newBatch = {
-      name: 'batch 3',
+      name: 'batch 4',
       fee: 3500,
       intake: 20,
       teachers: [{
         fullName: 'prof bob de bouwer'
-      }, {
-        fullName: 'prof akash dol'
-      }, {
-        fullName: 'prof Eva zielman'
       }]
     });
     ∫

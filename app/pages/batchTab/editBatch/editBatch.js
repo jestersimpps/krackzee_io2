@@ -5,7 +5,7 @@ import {
 
 
 @Page({
-  templateUrl: 'build/pages/batchTab/editBatch/editBatch.html'
+  templateUrl: 'build/pages/batchTab/editBatch/editbatch.html'
 })
 
 
