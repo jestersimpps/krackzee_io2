@@ -3,14 +3,14 @@
     Courses
   </ion-title>
 
-  <ion-buttons end>
-    <button>
-      <ion-icon name="md-checkmark" (click)="saveBatch()"></ion-icon> Save
-    </button>
-  </ion-buttons>
-
 </ion-navbar>
 
-<ion-content class="editBatch">
+<ion-content >
+  <ion-list>
 
+    <button ion-item  *ngFor="#course of courses" (click)="itemTapped($event, course)">
+      <ion-icon name="md-list" item-left></ion-icon>
+      {{course.courseName}}
+    </button>
+  </ion-list>
 </ion-content>
